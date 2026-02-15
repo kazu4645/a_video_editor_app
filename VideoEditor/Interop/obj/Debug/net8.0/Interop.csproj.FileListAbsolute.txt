@@ -1,0 +1,16 @@
+C:\video_editor_app\VideoEditor\Interop\bin\Debug\net8.0\Interop.deps.json
+C:\video_editor_app\VideoEditor\Interop\bin\Debug\net8.0\Interop.dll
+C:\video_editor_app\VideoEditor\Interop\bin\Debug\net8.0\Interop.pdb
+C:\video_editor_app\VideoEditor\Interop\bin\Debug\net8.0\CoreModels.dll
+C:\video_editor_app\VideoEditor\Interop\bin\Debug\net8.0\CoreModels.pdb
+C:\video_editor_app\VideoEditor\Interop\obj\Debug\net8.0\Interop.csproj.AssemblyReference.cache
+C:\video_editor_app\VideoEditor\Interop\obj\Debug\net8.0\Interop.GeneratedMSBuildEditorConfig.editorconfig
+C:\video_editor_app\VideoEditor\Interop\obj\Debug\net8.0\Interop.AssemblyInfoInputs.cache
+C:\video_editor_app\VideoEditor\Interop\obj\Debug\net8.0\Interop.AssemblyInfo.cs
+C:\video_editor_app\VideoEditor\Interop\obj\Debug\net8.0\Interop.csproj.CoreCompileInputs.cache
+C:\video_editor_app\VideoEditor\Interop\obj\Debug\net8.0\Interop.sourcelink.json
+C:\video_editor_app\VideoEditor\Interop\obj\Debug\net8.0\Interop.csproj.Up2Date
+C:\video_editor_app\VideoEditor\Interop\obj\Debug\net8.0\Interop.dll
+C:\video_editor_app\VideoEditor\Interop\obj\Debug\net8.0\refint\Interop.dll
+C:\video_editor_app\VideoEditor\Interop\obj\Debug\net8.0\Interop.pdb
+C:\video_editor_app\VideoEditor\Interop\obj\Debug\net8.0\ref\Interop.dll

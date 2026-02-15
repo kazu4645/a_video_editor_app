@@ -1,0 +1,12 @@
+C:\video_editor_app\VideoEditor\CoreModels\bin\Debug\net8.0\CoreModels.deps.json
+C:\video_editor_app\VideoEditor\CoreModels\bin\Debug\net8.0\CoreModels.dll
+C:\video_editor_app\VideoEditor\CoreModels\bin\Debug\net8.0\CoreModels.pdb
+C:\video_editor_app\VideoEditor\CoreModels\obj\Debug\net8.0\CoreModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\video_editor_app\VideoEditor\CoreModels\obj\Debug\net8.0\CoreModels.AssemblyInfoInputs.cache
+C:\video_editor_app\VideoEditor\CoreModels\obj\Debug\net8.0\CoreModels.AssemblyInfo.cs
+C:\video_editor_app\VideoEditor\CoreModels\obj\Debug\net8.0\CoreModels.csproj.CoreCompileInputs.cache
+C:\video_editor_app\VideoEditor\CoreModels\obj\Debug\net8.0\CoreModels.sourcelink.json
+C:\video_editor_app\VideoEditor\CoreModels\obj\Debug\net8.0\CoreModels.dll
+C:\video_editor_app\VideoEditor\CoreModels\obj\Debug\net8.0\refint\CoreModels.dll
+C:\video_editor_app\VideoEditor\CoreModels\obj\Debug\net8.0\CoreModels.pdb
+C:\video_editor_app\VideoEditor\CoreModels\obj\Debug\net8.0\ref\CoreModels.dll

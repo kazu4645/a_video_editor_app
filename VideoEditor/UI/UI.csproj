@@ -2,11 +2,16 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command='xcopy /Y /D "$(ProjectDir)..\..\bin\VideoEngine.dll" "$(TargetDir)"' ContinueOnError="true" />
+  </Target>
 
   <ItemGroup>
     <ProjectReference Include="..\CoreModels\CoreModels.csproj" />
