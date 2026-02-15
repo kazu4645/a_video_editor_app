@@ -1,0 +1,96 @@
+<Window x:Class="UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI"
+        mc:Ignorable="d"
+        Title="Simple Video Editor" Height="600" Width="800">
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- ツールバー：各種操作ボタンを配置 -->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
+            <Button Content="Add Video" Command="{Binding AddVideoCommand}" Padding="10,5" Margin="0,0,10,0"/>
+            <Button Content="Add Audio" Command="{Binding AddAudioCommand}" Padding="10,5" Margin="0,0,10,0"/>
+            <Button Content="Add Text" Command="{Binding AddTextCommand}" Padding="10,5" Margin="0,0,10,0"/>
+            <Separator Margin="10,0"/>
+            <Button Content="Grayscale" Command="{Binding ApplyFilterCommand}" CommandParameter="Grayscale" Padding="10,5" Margin="0,0,10,0"/>
+            <Button Content="Brightness" Command="{Binding ApplyFilterCommand}" CommandParameter="Brightness" Padding="10,5" Margin="0,0,10,0"/>
+            <Separator Margin="10,0"/>
+            <Button Content="Export MP4" Command="{Binding ExportCommand}" Padding="10,5" Background="LightGreen"/>
+        </StackPanel>
+
+        <!-- メインコンテンツ：タイムラインの可視化（モック） -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- 動画クリップリスト -->
+            <GroupBox Header="Video Clips" Grid.Column="0" Margin="0,0,5,0">
+                <ListBox ItemsSource="{Binding VideoClips}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding FilePath}" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding Duration, StringFormat=Duration: {0}s}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </GroupBox>
+
+            <!-- 音声トラックリスト -->
+            <GroupBox Header="Audio Tracks" Grid.Column="1" Margin="5,0,5,0">
+                <ListBox ItemsSource="{Binding AudioTracks}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding FilePath}" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding Duration, StringFormat=Duration: {0}s}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </GroupBox>
+
+            <!-- テキストオーバーレイリスト -->
+            <GroupBox Header="Text Overlays" Grid.Column="2" Margin="5,0,0,0">
+                <ListBox ItemsSource="{Binding TextOverlays}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Text}" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding PositionInTimeline, StringFormat=At: {0}s}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </GroupBox>
+        </Grid>
+
+        <!-- ステータスバー：メッセージと進捗状況を表示 -->
+        <StatusBar Grid.Row="3" Margin="0,10,0,0">
+            <StatusBarItem>
+                <TextBlock Text="{Binding StatusMessage}"/>
+            </StatusBarItem>
+            <StatusBarItem HorizontalAlignment="Right">
+                <ProgressBar Value="{Binding ExportProgress}" Width="100" Height="15" Visibility="{Binding IsBusy, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    </Window.Resources>
+</Window>
