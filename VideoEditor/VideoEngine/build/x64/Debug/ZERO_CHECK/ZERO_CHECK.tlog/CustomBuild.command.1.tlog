@@ -1,0 +1,10 @@
+^C:\VIDEO_EDITOR_APP\VIDEOEDITOR\VIDEOENGINE\BUILD\CMAKEFILES\B9A89E4BE2AA0B4B3B757F795AC18EA1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/video_editor_app/VideoEditor/VideoEngine -BC:/video_editor_app/VideoEditor/VideoEngine/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/video_editor_app/VideoEditor/VideoEngine/build/VideoEngine.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

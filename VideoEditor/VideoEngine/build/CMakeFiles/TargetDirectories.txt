@@ -1,0 +1,3 @@
+C:/video_editor_app/VideoEditor/VideoEngine/build/CMakeFiles/VideoEngine.dir
+C:/video_editor_app/VideoEditor/VideoEngine/build/CMakeFiles/ALL_BUILD.dir
+C:/video_editor_app/VideoEditor/VideoEngine/build/CMakeFiles/ZERO_CHECK.dir

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Interop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f21a1c215baa1b0e71e9d9580d868e72d6ec6979")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a7f32df0015bd9c162b443eb50cba216fae6f7b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Interop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Interop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

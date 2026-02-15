@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command='xcopy /Y /D "$(ProjectDir)..\..\bin\VideoEngine.dll" "$(TargetDir)"' ContinueOnError="true" />
+    <Exec Command='xcopy /Y /D "$(ProjectDir)..\bin\Debug\VideoEngine.dll" "$(TargetDir)"' />
   </Target>
 
   <ItemGroup>

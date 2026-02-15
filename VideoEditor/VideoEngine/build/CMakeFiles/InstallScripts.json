@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/video_editor_app/VideoEditor/VideoEngine/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
